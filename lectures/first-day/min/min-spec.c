@@ -1,13 +1,15 @@
 #include <assert.h>
 
+int min(int x, int y);
+
 int main()
 {
 	assert(min(0, 0) == 0);                   /* min(X, X) == X */
 	assert(min(-100, -100) == -100);          /* ditto */
 	assert(min(100, 100) == 100);             /* ditto */
 
-	assert(min(-1, 0) == -1);                 /* min(-X, 0) == -x */
-	assert(min(0, -1) == -1);                 /* min(0, -X) == -x */
+	assert(min(-1, 0) == -1);
+	assert(min(0, -1) == -1);
 
 	assert(min(-1, 10) == min(10, -1));       /* min(X, Y)  == min(Y, X) */
 

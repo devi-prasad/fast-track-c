@@ -1,14 +1,11 @@
 
 #include <assert.h>
 
+unsigned int absolute(int x);
 
 int main()
 {
-	unsigned int a;
-
     assert(absolute(0) == 0);
-    a = -1;
-    assert(a == 0xFFFFFFFF);
     assert(absolute(-1) == 1);
     assert(absolute(1) == 1);
 
