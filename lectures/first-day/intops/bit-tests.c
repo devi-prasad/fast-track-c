@@ -3,9 +3,8 @@
 
 /*
  *
- * Computers represent numbers in binary. There's a special way of 
- * representing numbers called the two's complement system which the modern
- * computers employ. 
+ * Computers represent numbers in binary. Modern computers employ a 
+ * representation called the two's complement binary system. 
  * 
  * The following tests are intended to give us an idea of the intricacies
  * that C language programmers MUST confront and appreciate. A good grasp of
@@ -44,7 +43,9 @@ void run_byte_tests()
 void run_signed_int_bit_tests()
 {
 	int x = 1;
-
+    
+    assert(sizeof(int) == 4); /* we assume ints to be 32-bit beasts! */
+    
     /* positive numbers */
 	assert(x << 1 == 2);
 	assert(x << 2 == 4);
@@ -111,7 +112,6 @@ void run_unsigned_int_bit_tests()
 
 void run_bit_tests()
 {
-	run_byte_tests();
     run_unsigned_int_bit_tests();
     run_signed_int_bit_tests();
 }
