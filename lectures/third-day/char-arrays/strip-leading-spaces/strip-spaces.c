@@ -8,7 +8,7 @@
  * returns the number of leading spaces stripped from 'src'.
  */
 
-int strip_leading_spaces(char dest[], char src[], unsigned int len)
+int strip_leading_spaces(char dest[], const char src[], unsigned int len)
 {
     unsigned int i, j, r;
 
@@ -25,3 +25,4 @@ int strip_leading_spaces(char dest[], char src[], unsigned int len)
 
     return r;
 }
+

@@ -18,9 +18,11 @@ int main()
 
     sum = array_sum(arr, 1);
     assert(sum == 1);
+    assert(sum == arr[0]);
 
     sum = array_sum(arr, 4);
     assert(sum == 10);
+    assert(sum == arr[0] + arr[1] + arr[2] + arr[3]);
 
     sum = array_sum(arr, 6);
     assert(sum == 21);

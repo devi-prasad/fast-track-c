@@ -8,14 +8,14 @@
 int replace_space_by_dollar(char str[], unsigned int len)
 {
     int i;
-    int c;
+    int nc;
 
-    for (i = 0, c = 0; i < len; ++i) {
+    for (i = 0, nc = 0; i < len; ++i) {
         if (str[i] == ' ') {
             str[i] = '$';
-            ++c;
+            ++nc;
         }
     }
 
-    return c;
+    return nc;
 }

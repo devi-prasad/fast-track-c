@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <string.h>
 
-int strip_leading_spaces(char dest[], char src[], unsigned int len);
+int strip_leading_spaces(char dest[], const char src[], unsigned int len);
 
 int main()
 {
