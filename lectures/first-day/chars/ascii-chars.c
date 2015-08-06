@@ -2,6 +2,7 @@
 
 int main()
 {
+    assert(sizeof(char) == 1);
     assert('\0' == 0);
     assert('0' != 0);
 
