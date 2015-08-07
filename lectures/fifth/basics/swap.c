@@ -2,11 +2,17 @@
 #include <string.h>
 #include <assert.h>
 
-#define MAX_ALLOWED_SWAP_LEN (4 * 1024)
-static char __str_swap_buffer__[MAX_ALLOWED_SWAP_LEN];
-
+/*
+ * This uses an array with "static" storage specifier. Its lifetime spans
+ * across function calls. This is an efficient way to define data visible
+ * only within a function.
+ *
+ */
 void str_swap(char *s, char *t)
 {
+    #define MAX_ALLOWED_SWAP_LEN (4 * 1024)
+    static char __str_swap_buffer__[MAX_ALLOWED_SWAP_LEN];
+
     assert(s != NULL && t != NULL);
     assert(strlen(s) == strlen(t));
     assert(MAX_ALLOWED_SWAP_LEN > strlen(s));
