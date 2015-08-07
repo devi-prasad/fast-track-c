@@ -42,7 +42,6 @@ struct _scope_ {
  */
 DataType scope_lookup_name(Scope *scope, char name[])
 {
-
     do {
         Variable *var = scope->vars;
         while (var != NULL) {
