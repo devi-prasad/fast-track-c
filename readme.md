@@ -7,20 +7,20 @@ barriers, availability of efficient compilers, its historic ability to
 directly invoke (operating) system calls, and its ability to interface with
 assembly code have made C a prominent systems programming language.
 
+Embedded systems development has been the forte of C programmers. For one, C
+programs tend to be memory efficient. Thanks to advances in compiler technology,
+C programs generally outperform competing implementations in other
+programming languages. No wonder, many performance benchmarking suites employ
+implementations in C as reference or baseline for comparison.
+
 Although the language core is small and simple, becoming an effective C
-programmer takes substantial effort. There are minute details and complexities
-that one needs to grasp before attempting to develop reasonably large code. One
+programmer takes substantial effort. There are minute details that one needs to
+grasp before attempting to develop reasonably large programs. One
 of its merits - simple machine-model with minimal abstractions - turns out to
 be the hardest to get right for many a novice. If the learner does not
-pay attention, it is remarkably easy for one to create hard to understand and
+pay attention, it is remarkably easy to create hard to understand and
 impossible to debug C programs. It takes careful study, practice, and 
 professional reflection to mature into a pragmatic C programmer.
-
-Embedded systems development has been the forte of C programmers. For one, C
-programs tend to be memory efficient. Thanks to efficient compilation, C
-programs generally tend to outperform competing implementations in other
-programming languages. No wonder, many performance benchmarking suites employ
-implementations in C as a reference or baseline for comparison.
 
 It is natutal to ask **what makes learning to program in C difficult?**
 
@@ -30,7 +30,7 @@ There are many reasons. We will mention only a few here.
 in its design. C is extremely permissive in mixing values of different types.
 Typecasting, for example, can give rise to dumb but hard to locate bugs. 
 Allowing raw addresses to be manipulated by pointer arithmetic is an
-intriguing idea. Unfortunately, it is usual in practice to go wrong with pointer
+intriguing idea. Unfortunately, it is easy to go wrong with pointer
 arithmetic, ending up with dreaded security vulnerabilities (think of buffer
 overflows). [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra),
 a renowned computer scientist, called pointers in C language a "step backward 
@@ -39,22 +39,22 @@ in computer science."
 2. Manual memory management is tricky to get right. A programmer needs to
 take extreme care while managing memory allocared on process' heap. If one
 is not cautious, programs end up using dangling pointers, affecting program's
-state and behavior in strange and unpredictable ways.
+state and behavior in unpredictable ways.
 
 3. C does not define a module system. It lacks even a naive namespace
 management system. All names used in a program (small or large) live in one
-flat namespace. It is trivially possible to mix up names, resulting in hard to
+flat namespace. It is trivially possible to mix-up names, resulting in hard to
 detect bugs.
 
 Despite all its flaws, it is interesting to note that C is used to
-develop numerous state of the art software systems. Web Servers (such as NGINX),
+develop numerous state-of-the-art software systems. Web Servers (such as NGINX),
 SQL Database Management Systems (PostgreSQL, for instance), NoSQL in-memory
 key-value store such as Redis, Version Control Systems (Git), and the list 
-goes on. These and many other systems are extensively used by businesses
+goes on. These and many other systems are extensively used by business
 enterprises, scientific community, professional developers, hobby programmers,
 and far numerous end-users.
 
-**C is undoubtedly one of the most loved and most hated programming languages.**
+**C is undoubtedly one of the most loved and the most hated programming languages.**
 
 The question is, **how should one approach learning to program in C?**
 
@@ -83,19 +83,19 @@ following habits from the beginning:
     strict code analysis, helping programmers catch potential bugs arising
     out of wrong usage of language constructs.
 
-4. Use best practices and develop habits required to design large systems.
+4. Use best practices and develop attitudes required to design large systems.
 
     Despite C language's lack of module system, we show simple practices and 
     methods for organizinging (sub)programs across conceptual modules, defining
-    interfaces, programming against interfaces (data abstraction), and hiding
-    implementation details. These practices shape the way one views systems-design.
+    interfaces, and hiding implementation details. These practices shape the way
+    one views systems-design, in general.
 
 5. Learn by studying source code created by masters of the art.
 
     Open Souce Software (OSS) projects offer a wealth of knowledge. One needs
     to learn to read and review techniques used in large and successful software
     projects. There are [excellent online books](http://aosabook.org/en/index.html)
-    that serve as great reference material for the most curious among us!
+    that serve as great reference material.
 
 To summarize, here is a laundry list of ideas that we pursue in the Fast-Track-C
 sessions:
@@ -108,7 +108,7 @@ sessions:
   - Assertions - specifying precondition, postcondition, and program invariants.
   - Dynamic memory allocation, and manual memory management.
   - Fundamental program-organization methods in C language.
-  - Creating abstract data types, and hiding implementation details.
+  - Abstract data types, and hiding implementation details.
   - Guidelines and practices for constructing safer programs.
   - Basic techniques for instructing compilers to perform strict code analysis.
   - Documenting design decisions and implementation details.
@@ -116,5 +116,5 @@ sessions:
 ### Are you interested in learning from Fast-Track-C?
 Send your emails to dprasadm@gmail.com, mentioning your motivation.
 
-Contact me on 9591429050 to know more about Fast-Track-C, and other professional
-engagements.
+Contact me **9591429050** to know more about Fast-Track-C. If you are looking for
+advanced training in Java or Python or functional programming, I'd be glad to help.
