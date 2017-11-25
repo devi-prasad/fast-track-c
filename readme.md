@@ -32,7 +32,7 @@ Typecasting, for example, can give rise to dumb but hard to locate bugs.
 Allowing raw addresses to be manipulated by pointer arithmetic is an
 intriguing idea. Unfortunately, it is usual in practice to go wrong with pointer
 arithmetic, ending up with dreaded security vulnerabilities (think of buffer
-overflows). [Edsgar Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra),
+overflows). [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra),
 a renowned computer scientist, called pointers in C language a "step backward 
 in computer science."
 
