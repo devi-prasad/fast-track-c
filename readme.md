@@ -116,5 +116,5 @@ sessions:
 ### Are you interested in learning from Fast-Track-C?
 Send your emails to dprasadm@gmail.com, mentioning your motivation.
 
-Contact me **9591429050** to know more about Fast-Track-C. If you are looking for
-advanced training in Java or Python or functional programming, I'd be glad to help.
+Contact me (**9591429050**) to know more about Fast-Track-C. If you are looking for
+advanced training in Java, Python, or functional programming, I'd be glad to help.
