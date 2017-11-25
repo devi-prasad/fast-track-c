@@ -3,7 +3,7 @@
 
 C is the programming language of choice in many computing fields. The small size
 of the language, its straightforward machine model, minimal or no abstraction
-barriers, availability of efficient compilers, and its historic ability to
+barriers, availability of efficient compilers, its historic ability to
 directly invoke (operating) system calls, and its ability to interface with
 assembly code have made C a prominent systems programming language.
 
@@ -29,11 +29,11 @@ There are many reasons. We shall look at only a few.
 1. C offers very little in terms of type safety. This is intensional
 in its design. C is extremely permissive in mixing values of different types.
 Typecasting, for example, can give rise to dumb but hard to locate bugs. 
-Treating pointers as raw addresses that may be typecast to "pint to" arbitrary
-typed-values imparts great flexibility and power to programmers while also
-making it extremely easy to cause dreaded buffer overflows and numerous other
-security vulnerabilities. Pointers in C language were called out as a 
-"step backward in computer science" by a renowned computer scietist.
+Treating pointers as raw addresses imparts great power to programmers.
+However, with such flecibility, it is extremely easy to create dreaded security
+vulnerabilities (think of buffer overflows). Pointers in C language were
+called out as a "step backward in computer science" by a renowned computer
+scietist.
 
 2. Manual memory management is tricky to get right. A programmer needs to
 take extreme care while maanaging heap allocared memory. If one is not cautious,
