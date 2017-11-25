@@ -1,5 +1,5 @@
 
-Becoming a Pragmatic Programmer in the C Language
+# Becoming a Pragmatic Programmer in the C Language
 
 C is the programming language of choice in many computing fields. The small size
 of the language, its straightforward machine model, minimal or no abstraction
@@ -22,11 +22,11 @@ programs generally tend to outperform competing implementations in other
 programming languages. No wonder, many performance benchmarking suites employ
 implementations in C as a reference or baseline for comparison.
 
-It is natutal to ask what makes learning to program in C difficult?
+It is natutal to ask **what makes learning to program in C difficult?**
 
 There are many reasons. We shall look at only a few.
 
-First of all, C offers very little in terms of type safety. This is intensional
+1. C offers very little in terms of type safety. This is intensional
 in its design. C is extremely permissive in mixing values of different types.
 Typecasting, for example, can give rise to dumb but hard to locate bugs. 
 Treating pointers as raw addresses that may be typecast to "pint to" arbitrary
@@ -35,12 +35,12 @@ making it extremely easy to cause dreaded buffer overflows and numerous other
 security vulnerabilities. Pointers in C language were called out as a 
 "step backward in computer science" by a renowned computer scietist.
 
-Second, manual memory management is tricky to get right. A programmer needs to
+2. Manual memory management is tricky to get right. A programmer needs to
 take extreme care while maanaging heap allocared memory. If one is not cautious,
 one might very easily end up using dangling pointers, and affect program's state
 and behavior in weird ways.
 
-Third, C does not define a module system. It lacks even a naive namespace
+3. C does not define a module system. It lacks even a naive namespace
 management system. All symbols and names exist in one flat namespace, and it is
 trivially possible to mix up names, and thus create hard to detect bugs.
 
@@ -52,56 +52,56 @@ key-value store such as Redis, Distributed Version Control Systems
 extensively used by businesses enterprises, scientific community, professional
 developers, hobby programmers, and far numerous end-users.
 
-C is undoubtedly one of the most loved and most hated programming languages.
+**C is undoubtedly one of the most loved and most hated programming languages.**
 
-The question is this: how should one approach learning to program in C?
+The question is this: **how should one approach learning to program in C?**
 
 In Fast-Track C Programming sessions, we employ a blend of principles,
 practices, and techniques to write better C programs. We try hard to impart the
 following habits from the word go:
 
-(1) draw upon sound principles and methods from Formal Methods.
+1. Draw upon sound principles and methods from Formal Methods.
     From the very beginning - that is, from the very first example - we practice
     thinking about, and specifying preconditions, postconditions, and 
     invariants. We use assertions as an effective tool for specifying and
     checking (functional and technical) requirements.
 
-(2) learn simple methods for documenting program's design and implementation.
+2. Employ simple methods for documenting program's design and implementation.
     Programmers have a tendency to shun away from detailed documentation. We
     show simple and effective habits of documenting design and implementation
     details, within programs as embedded comments, and also as external 
     documents.
 
-(3) leverage various options and knobs that modern C compilers offer.
+3. Leverage various options and knobs that modern C compilers offer.
     GCC and Clang can be used to perform strictest form of code analysis, thus
     helping programmers catch potential bugs arising out of wrong usage of
     language constructs.
 
-(4) use best practices and develop habits required to develop large systems.
+4. Use best practices and develop habits required to develop large systems.
     Despite C language's lack of module system, we show simple practices and 
     methods for organizinging (sub)programs across conceptual modules, defining
     interfaces, programming against interfaces (data abstraction), and hiding
     implementation details. These practices serve a long way.
 
-(5) learn from reading code from the masters and experts.
+5. Learn from reading code from the masters and experts.
     Open Souce Software (OSS) projects offer a wealth of knowledge. One needs
     to learn to read and review techniques used in large and successful software
     projects.
 
 Here is a laundry list of ideas that we pursue in the Fast-Track sessions:
 
-   The execution model of C programs.
-   Memory model of a C program - global memory, program stack, and heap memory.
-   Types and type safety (or the lack of it) in C language.
-   Pointers, and the data type - memory access patterns.
-   Procedure invocation - Call-by-value and Call-by-reference methods.
-   Assertions - specifying precondition, postcondition, and program invariants.
-   Dynamic memory allocation, and manual memory management.
-   Fundamental program-organization methods in C language.
-   Creating abstract data types, and hiding implementation details.
-   Guidelines and practices for constructing safer programs.
-   Basic techniques for instructing compilers to perform strict code analysis.
-   Documenting design decisions and implementation details.
+  - The execution model of C programs.
+  - Memory model of a C program - global memory, program stack, and heap memory.
+  - Types and type safety (or the lack of it) in C language.
+  - Pointers, and the data type - memory access patterns.
+  - Procedure invocation - Call-by-value and Call-by-reference methods.
+  - Assertions - specifying precondition, postcondition, and program invariants.
+  - Dynamic memory allocation, and manual memory management.
+  - Fundamental program-organization methods in C language.
+  - Creating abstract data types, and hiding implementation details.
+  - Guidelines and practices for constructing safer programs.
+  - Basic techniques for instructing compilers to perform strict code analysis.
+  - Documenting design decisions and implementation details.
 
 
 
