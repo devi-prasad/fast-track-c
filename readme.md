@@ -37,7 +37,7 @@ a renowned computer scientist, called pointers in C language a "step backward
 in computer science."
 
 2. Manual memory management is tricky to get right. A programmer needs to
-take extreme care while maanaging memory allocared on process' heap. If one
+take extreme care while managing memory allocared on process' heap. If one
 is not cautious, programs end up using dangling pointers, affecting program's
 state and behavior in strange and unpredictable ways.
 
@@ -90,14 +90,15 @@ following habits from the beginning:
     interfaces, programming against interfaces (data abstraction), and hiding
     implementation details. These practices shape the way one views systems-design.
 
-5. Learn by studying code created by the masters of the art.
+5. Learn by studying source code created by masters of the art.
 
     Open Souce Software (OSS) projects offer a wealth of knowledge. One needs
     to learn to read and review techniques used in large and successful software
     projects. There are [excellent online books](http://aosabook.org/en/index.html)
     that serve as great reference material for the most curious among us!
 
-To summarize, here is a laundry list of ideas that we pursue in the Fast-Track sessions:
+To summarize, here is a laundry list of ideas that we pursue in the Fast-Track-C
+sessions:
 
   - The execution model of C programs.
   - Memory model of a C program - global memory, program stack, and heap memory.
@@ -112,7 +113,7 @@ To summarize, here is a laundry list of ideas that we pursue in the Fast-Track s
   - Basic techniques for instructing compilers to perform strict code analysis.
   - Documenting design decisions and implementation details.
 
-###Are you interested in learning from Fast-Track-C
+### Are you interested in learning from Fast-Track-C?
 Email me giving some details about your background and interests.
 
 email: dprasadm@gmail.com
