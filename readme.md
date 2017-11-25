@@ -62,8 +62,8 @@ In Fast-Track-C sessions, we employ a blend of principles, practices, and
 techniques to write better C programs. We try hard to impart the
 following habits from the beginning:
 
-1. Draw upon sound principles and methods of [Formal Methods]
-   (https://en.wikipedia.org/wiki/Formal_methods).
+1. Draw upon sound principles and methods of
+   [Formal Methods](https://en.wikipedia.org/wiki/Formal_methods).
 
     From the very beginning - that is, from the first example - we practice
     thinking about and specifying preconditions, postconditions, and 
@@ -114,6 +114,7 @@ sessions:
   - Documenting design decisions and implementation details.
 
 ### Are you interested in learning from Fast-Track-C?
-Email me giving some details about your background and interests.
+Send your emails to dprasadm@gmail.com, mentioning your motivation.
 
-email: dprasadm@gmail.com
+Contact me on 9591429050 to know more about Fast-Track-C, and other professional
+engagements.
