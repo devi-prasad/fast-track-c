@@ -26,7 +26,7 @@ It is natutal to ask **what makes learning to program in C difficult?**
 
 There are many reasons. We will mention only a few here.
 
-1. C offers very little in terms of type safety. This is intensional
+1. C offers very little in terms of type safety. This is intentional
 in its design. C is extremely permissive in mixing values of different types.
 Typecasting, for example, can give rise to dumb but hard to locate bugs. 
 Allowing raw addresses to be manipulated by pointer arithmetic is an
@@ -86,7 +86,7 @@ following habits from the beginning:
 4. Use best practices and develop attitudes required to design large systems.
 
     Despite C language's lack of module system, we show simple practices and 
-    methods for organizinging (sub)programs across conceptual modules, defining
+    methods for organizing (sub)programs across conceptual modules, defining
     interfaces, and hiding implementation details. These practices shape the way
     one views systems-design, in general.
 
