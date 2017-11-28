@@ -37,7 +37,7 @@ a renowned computer scientist, called pointers in C language a "step backward
 in computer science."
 
 2. Manual memory management is tricky to get right. A programmer needs to
-take extreme care while managing memory allocared on process' heap. If one
+take extreme care while managing memory allocated on process' heap. If one
 is not cautious, programs end up using dangling pointers, affecting program's
 state and behavior in unpredictable ways.
 
@@ -73,7 +73,7 @@ following habits from the beginning:
 2. Use best practices, and develop attitudes required to design large systems.
 
     Despite C language's lack of module system, we show simple practices and 
-    methods for organizing (sub)programs across conceptual modules, defining
+    methods for organizing (sub)programs across conceptual modules, defining
     interfaces, and hiding implementation details. These practices shape the way
     one views systems-design, in general.
 
@@ -104,8 +104,8 @@ sessions:
   - Memory model of a C program: global memory, program stack, and heap memory.
   - Types and type safety (or the lack of it) in C.
   - Procedure invocation: call-by-value, call-by-reference, and variadic arguments.
-  - Assertions - specifying precondition, postcondition, and loop invariants.
-  - Methods for organizing C programs.
+  - Assertions: specifying precondition, postcondition, and loop invariants.
+  - Methods of organizing C programs.
   - Abstract data types, and hiding implementation details.
   - Dynamic memory allocation, and manual memory management.
   - Guidelines and practices for constructing well-behaved/safe programs.
