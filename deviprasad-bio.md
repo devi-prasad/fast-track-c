@@ -3,7 +3,7 @@ I am an independent consultant offering software design and development services
 I also offer teaching and training services for novice as well as practicing software
 developers.
 
-I earned my doctorate degree in Computer Science from NIT, Allahabad.
+I have a doctorate degree in Computer Science from NIT Allahabad.
 In my thesis, I developed denotational semantics of advice-weaving for a
 class-based aspect-oriented programming language.
 
