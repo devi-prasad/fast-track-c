@@ -1,112 +1,161 @@
 
 *Tentative Schedule of the fast-track-c Course*
 
-For the sake of presentation and discussion, we assume that
-the course will be conducted in the month of January, 2018.
+This document provides a fairly good idea of the structure and content
+of the fast-track-c course. During this course, students are required to 
+participate in the following three types of learning activities:
 
-|----+-----------+--------------------------------------------+----------|
-|  # | Date      | Topic                                      | Duration |
-|    |           |                                            |   (mins) |
-|----+-----------+--------------------------------------------+----------|
-|  1 | 01-Jan    | preconditions.                             |      120 |
-|    | Monday    | postconditions.                            |          |
-|    |           | assert statement.                          |          |
-|    |           | unit tests.                                |          |
-|    |           |                                            |          |
-|    |           | Basic Git commands.                        |          |
-|    |           | (init, add, commit,                        |          |
-|    |           | log, status, diff,                         |          |
-|    |           | checkout, mv, and rm).                     |          |
-|    |           | /.bashrc/ file.                            |          |
-|    |           |                                            |          |
-|    |           | A few GCC options that treat               |          |
-|    |           | warnings as errors.                        |          |
-|----+-----------+--------------------------------------------+----------|
-|  2 | 02-Jan    | Build automation with Makefiles.           |       90 |
-|    | Tuesday   | 'make' command in Linux.                   |          |
-|    |           |                                            |          |
-|    |           | Recommended directory structure.           |          |
-|    |           | - src, docs, lib, build,                   |          |
-|    |           | - readme.                                  |          |
-|    |           |                                            |          |
-|    |           | Memory-model of C programs.                |          |
-|    |           | Pointers and arrays.                       |          |
-|    |           | Structures, and unions.                    |          |
-|    |           | Pointer arithmetic.                        |          |
-|    |           | Dangling/stale pointers.                   |          |
-|    |           | Buffer overflow bugs.                      |          |
-|----+-----------+--------------------------------------------+----------|
-|  3 | 03-Jan    | Exercises.                                 |          |
-|    | Wednesday |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-|  4 | 04-Jan    | Developing reusable data strucrues.        |       90 |
-|    | Thursday  |                                            |          |
-|    |           | Different flavors of stacks,               |          |
-|    |           | and queues.                                |          |
-|    |           |                                            |          |
-|    |           | Exercise:                                  |          |
-|    |           | complete the partial implementation of     |          |
-|    |           | *List* data structure shown in the         |          |
-|    |           | list of assignments.                       |          |
-|----+-----------+--------------------------------------------+----------|
-|  5 | 05-Jan    | Developing reusable data strucrues.        |       60 |
-|    | Friday    |                                            |          |
-|    |           | Hashing and hash-tables.                   |          |
-|    |           | Heap data structure.                       |          |
-|----+-----------+--------------------------------------------+----------|
-|  6 | 06-Jan    | Exercises.                                 |          |
-|    | Saturday  |                                            |          |
-|    |           |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-|  7 | 08-Jan    | Exercises.                                 |          |
-|    | Monday.   |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-|  8 | 09-Jan    | Using an open-source library to solve a    |          |
-|    | Tuesday   | reasonably involved problem.               |          |
-|    |           |                                            |          |
-|    |           | Part 1.                                    |       60 |
-|    |           | Unserstanding the library API, its design, |          |
-|    |           | and architecture.                          |          |
-|    |           | Scraping html documents and storing        |          |
-|    |           | data in a relational DBMS table -          |          |
-|    |           | Using curl and mysql APIs.                 |          |
-|----+-----------+--------------------------------------------+----------|
-|  9 | 10-Jan    | Using an open-source library to solve a    |          |
-|    | Wednesday | reasonably involved problem.               |          |
-|    |           |                                            |          |
-|    |           | Part 2.                                    |          |
-|    |           | Continue the discussion and complete the   |          |
-|    |           | discussion of the implementation details.  |       60 |
-|----+-----------+--------------------------------------------+----------|
-| 10 | 11-Jan    | Exercises.                                 |          |
-|    | Thursday  |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-| 11 | 12-Jan    | Exercises.                                 |          |
-|    | Friday    |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-| 12 | 13-Jan    | Desinging and developing a communication   |          |
-|    | Saturday  | protocol for a Game server.                |      120 |
-|    |           | Message definitions.                       |          |
-|    |           | Message buffers and their structure.       |          |
-|    |           | Sending and receiving messages.            |          |
-|    |           | Message processing.                        |          |
-|    |           |                                            |          |
-|    |           | This solution requires most of the skills  |          |
-|    |           | of C programming discussed so far in the   |          |
-|    |           | course.                                    |          |
-|----+-----------+--------------------------------------------+----------|
-| 13 | 15-Jan    | ....Continued.                             |      120 |
-|    | Monday    |                                            |          |
-|----+-----------+--------------------------------------------+----------|
-| 14 | 16-Jan    | Assignments and Minit Projects.            |          |
-| 15 | Tuesday   |                                            |          |
-| 16 | to        | Writing specification documents.           |          |
-| 17 | 20-Jan    | Documenting the design.                    |          |
-| 18 | Saturday  | Implementation.                            |          |
-|----+-----------+--------------------------------------------+----------|
-| 19 | 22-Jan    | Project evaluation.                        |          |
-|    | Monday    |                                            |          |
-|    |           | *Assessment and Final Grading*             |          |
-| 20 | 23-Jan    |                                            |          |
-|    | Tuesday   |                                            |          |
-|----+-----------+--------------------------------------------+----------|
+1. Listening to lectures and tutorials.
+   - classroom-like interactions with instructors.
+
+2. Solving exercises and assignments.
+   - mostly individually, and in some cases,  in a group of two
+     or three cohorts.
+
+3. Self-learning.
+   - reading /about/ programming
+   - reading and reviewing programs
+   - refactoring existing programs, and
+   - reflection.
+
+
+|----+---+-----------------------------------------------------+--------|
+|  # |   | Duration                                            |        |
+|    |   |                                                     | (mins) |
+|----+---+-----------------------------------------------------+--------|
+|  1 |   | A close look at data-types in ANSI C.               |    120 |
+|    |   | Using /stdint/ definitions for portability.         |        |
+|    |   |                                                     |        |
+|    |   | Procedures, and call-by-value semantics of          |        |
+|    |   | passing arguments.                                  |        |
+|    |   |                                                     |        |
+|    |   | Preconditions. Postconditions.                      |        |
+|    |   |                                                     |        |
+|    |   | Assertions and /assert/ statement.                  |        |
+|    |   |                                                     |        |
+|    |   | Unit tests.                                         |        |
+|    |   |                                                     |        |
+|    |   | Version Control System - Git.                       |        |
+|    |   | Basic Git commands.                                 |        |
+|    |   |                                                     |        |
+|    |   | (init, add, commit, log, status, diff,              |        |
+|    |   | checkout, mv, and rm).                              |        |
+|    |   |                                                     |        |
+|    |   | /.bashrc/ file.                                     |        |
+|    |   |                                                     |        |
+|    |   | A few GCC-options to treat warnings                 |        |
+|    |   | as errors.                                          |        |
+|----+---+-----------------------------------------------------+--------|
+|  2 |   | Build automation with Makefiles.                    |    120 |
+|    |   | 'make' command in Linux.                            |        |
+|    |   |                                                     |        |
+|    |   | Recommended directory structure.                    |        |
+|    |   | - src, docs, lib, build,                            |        |
+|    |   | - readme.                                           |        |
+|    |   |                                                     |        |
+|    |   | Memory-model of C programs.                         |        |
+|    |   |                                                     |        |
+|    |   | Pointers and arrays.                                |        |
+|    |   | Passing arguments: call-by-reference.               |        |
+|    |   | Structures, and unions.                             |        |
+|    |   |                                                     |        |
+|    |   | Pointer arithmetic.                                 |        |
+|    |   |                                                     |        |
+|    |   | Dangling/stale pointers.                            |        |
+|    |   |                                                     |        |
+|    |   | Buffer overflow bugs.                               |        |
+|----+---+-----------------------------------------------------+--------|
+|  3 |   | Creating environment variables in Linux shell.      |    120 |
+|    |   |                                                     |        |
+|    |   | Accessing environment variables in C programs.      |        |
+|    |   |                                                     |        |
+|    |   | Communicating the program execution status          |        |
+|    |   | with the parent shell.                              |        |
+|    |   |                                                     |        |
+|    |   | Defining and using pointers to functions.           |        |
+|    |   | Defining Callback procedures and passing pointer to |        |
+|    |   | such procedures.                                    |        |
+|    |   | Reactive Observers of external events.              |        |
+|    |   |                                                     |        |
+|    |   |                                                     |        |
+|    |   | C library support for dynamic memory allocation     |        |
+|    |   | and management.                                     |        |
+|    |   | (malloc, calloc, realloc, and free)                 |        |
+|----+---+-----------------------------------------------------+--------|
+|  4 |   | Assignments and self-learning.                      |        |
+|----+---+-----------------------------------------------------+--------|
+|  5 |   | Developing reusable data strucrues.                 |    120 |
+|    |   |                                                     |        |
+|    |   | Different flavors of stacks,                        |        |
+|    |   | and queues.                                         |        |
+|    |   |                                                     |        |
+|    |   | Exercise:                                           |        |
+|    |   | complete the partial implementation of              |        |
+|    |   | *List* data structure shown in the                  |        |
+|    |   | list of assignments.                                |        |
+|----+---+-----------------------------------------------------+--------|
+|  6 |   | Developing reusable data strucrues.                 |    120 |
+|    |   |                                                     |        |
+|    |   | Hashing and hash-tables.                            |        |
+|    |   | Heap data structure.                                |        |
+|----+---+-----------------------------------------------------+--------|
+|  7 |   | Exercises.                                          |        |
+|    |   |                                                     |        |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+|  8 |   | Exercises.                                          |        |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+|  9 |   | Using an open-source library to solve a             |        |
+|    |   | reasonably involved problem.                        |        |
+|    |   |                                                     |        |
+|    |   | Part 1.                                             |     90 |
+|    |   | We will use openjpg (http://www.openjpeg.org/)      |        |
+|    |   | API to process still JPEG images as well as         |        |
+|    |   | motion jpeg images.                                 |        |
+|----+---+-----------------------------------------------------+--------|
+| 10 |   | Using an open-source library to solve a             |        |
+|    |   | reasonably involved problem.                        |        |
+|    |   |                                                     |        |
+|    |   | Part 2.                                             |        |
+|    |   | Continue the discussion and complete the            |        |
+|    |   | discussion of the implementation details.           |     60 |
+|----+---+-----------------------------------------------------+--------|
+| 11 |   | Exercises.                                          |        |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+| 12 |   | Exercises.                                          |        |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+| 13 |   | Desinging and developing a communication            |        |
+|    |   | protocol for a Virtual Conference Room (VCR).       |    120 |
+|    |   |                                                     |        |
+|    |   | Requirements.                                       |        |
+|    |   | Designing a protocol based on UDP.                  |        |
+|    |   |                                                     |        |
+|    |   | Message definitions.                                |        |
+|    |   |                                                     |        |
+|    |   | Message buffers and their structure.                |        |
+|    |   | Sending and receiving messages.                     |        |
+|    |   |                                                     |        |
+|    |   | Message processing.                                 |        |
+|    |   |                                                     |        |
+|    |   | This solution requires most of the skills           |        |
+|    |   | of C programming discussed so far in the            |        |
+|    |   | course.                                             |        |
+|----+---+-----------------------------------------------------+--------|
+| 14 |   | ....Continued.                                      |    120 |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+| 15 |   | Assignments and Minit Projects.                     |        |
+| 16 |   | Documenting the design.                             |        |
+| 17 |   | Implementation.                                     |        |
+| 18 |   |                                                     |        |
+| 19 |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
+| 20 |   | Project evaluation.                                 |        |
+|    |   |                                                     |        |
+|    |   | *Assessment and Final Grading*                      |        |
+| 21 |   |                                                     |        |
+|    |   |                                                     |        |
+|----+---+-----------------------------------------------------+--------|
